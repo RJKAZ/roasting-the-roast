@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: brown;
+    text-align: center;
+}
+
+footer{
+    background-color: brown;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.main{
+    padding-top: 30px;
+    text-align: center;
+    height: 1000px;
+
+    background-image: url(./images/pexels-photo-2101150.jpeg);
+    background-size: cover;
+}
