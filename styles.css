@@ -111,3 +111,104 @@ footer{
 .product:hover .sides{
     transform: rotateX(180deg);
 }
+
+/* This is the CSS for the Home Pages Navbar */
+
+.mainnavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav{
+    width: 600px;
+    height: 60px;
+    background-color: brown;
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.nav ol{
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+
+.nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.animation{
+    width: 0px;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: orange;
+    transition: all 0.4s;
+}
+
+li:nth-child(1):hover ~ .animation{
+    width: 150px;
+}
+
+li:nth-child(2):hover ~ .animation{
+    width: 150px;
+    left: 150px;
+}
+
+li:nth-child(3):hover ~ .animation{
+    width: 150px;
+    left: 300px;
+}
+
+li:nth-child(4):hover ~ .animation{
+    width: 150px;
+    left: 450px;
+}
+
+/* Glowing Slogan */
+
+.slogan{
+    text-align: center;
+    font-size: 100px;
+    margin: 0;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;   
+}
+
+.slogan h1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    color: brown;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.7s;
+
+}
+
+.slogan h1:hover{
+    color:black;
+   
+    text-shadow: 0 0 10px rgb(255, 255, 255),
+                 0 0 20px #fff,
+                 0 0 30px #fff,
+                 0 0 80px rgb(255, 255, 255),
+                 0 0 200px rgb(255, 255, 255),
+                 0 0 800px rgb(255, 255, 255);
+}
